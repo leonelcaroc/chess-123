@@ -5,41 +5,48 @@
   font-weight: bold;
 }
 
+  #spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease-out, visibility 0s linear .3s;
+    z-index: 99999;
+  }
 
+  #spinner.show {
+    transition: opacity .3s ease-out, visibility 0s linear 0s;
+    visibility: hidden;
+    opacity: 1;
+  }
 
-#spinner {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .3s ease-out, visibility 0s linear .3s;
-  z-index: 99999;
-}
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
 
-#spinner.show {
-  transition: opacity .3s ease-out, visibility 0s linear 0s;
-  visibility: hidden;
-  opacity: 1;
-}
+  ::-webkit-scrollbar:vertical {
+    width: 12px;
+  }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-}
+  ::-webkit-scrollbar:horizontal {
+    height: 12px;
+  }
 
-::-webkit-scrollbar:vertical {
-  width: 12px;
-}
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+  }
 
-::-webkit-scrollbar:horizontal {
-  height: 12px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, .5);
-  border-radius: 10px;
-  border: 2px solid #ffffff;
-}
-
-::-webkit-scrollbar-track {
-  border-radius: 10px;
-  background-color: #ffffff;
-}
-
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #ffffff;
+  }
+  
+  @media(max-width: 400px) {
+    .carousel-button1 {
+      padding-left: 1.5rem;
+    }
+  
+    .carousel-button2 {
+      padding-right: 1.5rem;
+    }
+  }
