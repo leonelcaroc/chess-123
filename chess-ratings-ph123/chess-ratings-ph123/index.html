@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philippine Live Chess Ratings</title>
+
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap’s Compiled CSS and JS -->
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist\bootstrap-5.1.3-dist\css\bootstrap.css">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+<body class="bg-light">
+
+ 
+  <!-- Spinner Start -->
+  
+  <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only"></span>
+    </div>
+  </div>
+  
+  <!-- Spinner End -->
+  
+  
+  <header class="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info bg-gradient fixed-top shadow p-3 mb-5">
+      <div class="container-fluid container-sm">
+        <a class="navbar-brand" href="#">Philippine Live Chess Ratings</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ratings
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Standard Rating</a></li>
+                <li><a class="dropdown-item" href="#">Rapid Rating</a></li>
+                <li><a class="dropdown-item" href="#">Blitz Rating</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex ps-5">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-light" type="submit">Search</button>
+          </form>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main class="py-5">
+    <div class="container">
+
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <h1 class="display-5 fw-bold lh-1">Philippine Live Chess Rating</h1>
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="/images/chess-unsplash.jpg" class="d-block mx-lg-auto img-fluid rounded shadow-sm" alt="" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            
+            <p class="lead">Live Chess Ratings for the Philippine chess players. You may review the latest games played by top players, download their games (PGN), follow big chess tournaments. Also included are FIDE Rating and rapid ratings, and live games.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="my-5">
+        <h1 class="chess_rating">Chess Rating</h1>
+        <h5 class="text-secondary">Based from NCFP January 1, 2021 release.</h5>
+        <form class="d-flex w-50 my-5">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="my-5">
+          <h3>Top 10 Overall</h3>
+          <div class="container table-responsive bg-light border rounded p-4 shadow bg-body">
+            <table class="table table-hover table-striped table-bordered text-center justify-content-between align-items-center overflow-scroll">
+              <thead class="table-secondary">
+                <tr>
+                  <th>#</th>
+                  <th>Title</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Middle Initial</th>
+                  <th>Standard Rating</th>
+                  <th>Rapid Rating</th>
+                  <th>Blitz Rating</th>
+                  <th>Fischer 960</th>
+                  <th>Gender</th>
+                  <th>Year</th>
+                  <th>NCFP ID</th>
+                  <th>FIDE ID</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Santos</td>
+                  <td>Karl</td>
+                  <td>M.</td>
+                  <td>2231</td>
+                  <td>1923</td>
+                  <td>2156</td>
+                  <td>1965</td>
+                  <td>Male</td>
+                  <td>Year</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><span class="badge bg-danger bg-gradient text-black">GM</span></td>
+                  <td>Dela Cruz</td>
+                  <td>Juan</td>
+                  <td>L.</td>
+                  <td>2100</td>
+                  <td>1910</td>
+                  <td>2005</td>
+                  <td>1914</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><span class="badge bg-success bg-gradient text-black">IM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2213</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><span class="badge bg-danger bg-gradient text-black">GM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>1823</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>1931</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><span class="badge bg-success bg-gradient text-black">IM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2231</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>1723</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><span class="badge bg-success bg-gradient text-black">IM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2134</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><span class="badge bg-secondary bg-gradient text-black">FM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2134</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2134</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+
+        <!-- Second Table -->
+        <div class="my-5">
+          <h3>Top National Masters</h3>
+          <div class="container table-responsive bg-light border rounded p-4 shadow bg-body">
+            <table class="table table-hover table-striped table-bordered text-center justify-content-between align-items-center">
+              <thead class="table-secondary">
+                <tr>
+                  <th>#</th>
+                  <th>Title</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Middle Initial</th>
+                  <th>Standard Rating</th>
+                  <th>Rapid Rating</th>
+                  <th>BLitz Rating</th>
+                  <th>Fischer 960</th>
+                  <th>Gender</th>
+                  <th>Year</th>
+                  <th>NDFP ID</th>
+                  <th>FIDE ID</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Santos</td>
+                  <td>Karl</td>
+                  <td>M.</td>
+                  <td>2231</td>
+                  <td>1923</td>
+                  <td>2156</td>
+                  <td>1965</td>
+                  <td>Male</td>
+                  <td>Year</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><span class="badge bg-danger bg-gradient text-black">GM</span></td>
+                  <td>Dela Cruz</td>
+                  <td>Juan</td>
+                  <td>L.</td>
+                  <td>2100</td>
+                  <td>1910</td>
+                  <td>2005</td>
+                  <td>1914</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><span class="badge bg-success bg-gradient text-black">IM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2213</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><span class="badge bg-danger bg-gradient text-black">GM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>1823</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>1931</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><span class="badge bg-success bg-gradient text-black">IM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2231</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>1723</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><span class="badge bg-success bg-gradient text-black">IM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2134</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><span class="badge bg-secondary bg-gradient text-black">FM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2134</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2134</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+
+        <!-- Third Table -->
+        <div class="my-5">
+          <h3>Top 10 Women</h3>
+          <div class="container table-responsive bg-light border rounded p-4 shadow bg-body">
+            <table class="table table-hover table-striped table-bordered text-center justify-content-between align-items-center">
+              <thead class="table-secondary">
+                <tr>
+                  <th>#</th>
+                  <th>Title</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Middle Initial</th>
+                  <th>Standard Rating</th>
+                  <th>Rapid Rating</th>
+                  <th>BLitz Rating</th>
+                  <th>Fischer 960</th>
+                  <th>Gender</th>
+                  <th>Year</th>
+                  <th>NDFP ID</th>
+                  <th>FIDE ID</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Santos</td>
+                  <td>Karl</td>
+                  <td>M.</td>
+                  <td>2231</td>
+                  <td>1923</td>
+                  <td>2156</td>
+                  <td>1965</td>
+                  <td>Male</td>
+                  <td>Year</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><span class="badge bg-danger bg-gradient text-black">GM</span></td>
+                  <td>Dela Cruz</td>
+                  <td>Juan</td>
+                  <td>L.</td>
+                  <td>2100</td>
+                  <td>1910</td>
+                  <td>2005</td>
+                  <td>1914</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><span class="badge bg-success bg-gradient text-black">IM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2213</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><span class="badge bg-danger bg-gradient text-black">GM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>1823</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>1931</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><span class="badge bg-success bg-gradient text-black">IM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2231</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>1723</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><span class="badge bg-success bg-gradient text-black">IM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2134</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><span class="badge bg-secondary bg-gradient text-black">FM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2134</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-success bg-gradient rounded-pill text-white">Active</span></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td><span class="badge bg-primary bg-gradient text-black">NM</span></td>
+                  <td>Manaloto</td>
+                  <td>Christian</td>
+                  <td>A.</td>
+                  <td>1834</td>
+                  <td>1987</td>
+                  <td>2013</td>
+                  <td>2134</td>
+                  <td>Male</td>
+                  <td>2000</td>
+                  <td>A00000</td>
+                  <td>A00000</td>
+                  <td><span class="badge bg-danger bg-gradient rounded-pill text-white">Inactive</span></td>
+                </tr>
+              </tbody>
+              <tfoot>
+
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="container-fluid bg-secondary bg-gradient text-white">
+    <footer class="py-3">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">About</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Ratings</a></a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Contact Us</a></li>
+      </ul>
+      <p class="text-center text-white">&copy; 2022 Philippine Live Chess Rating, Inc</p>
+    </footer>
+  </div>
+
+
+
+  <script src="bootstrap-5.1.3-dist\bootstrap-5.1.3-dist\js\bootstrap.bundle.js"></script>
+</body>
+
+</html>
