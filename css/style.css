@@ -2,6 +2,7 @@
 
 .chess_rating {
   font-family: 'Merriweather', serif;
+  font-weight: bold;
 }
 
 #spinner {
