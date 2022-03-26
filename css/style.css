@@ -24,6 +24,40 @@
   appearance: none;
 }
 
+.table-responsive::-webkit-scrollbar-button:single-button {
+  background: #bbbbbb;
+  display: block;
+  border-style: solid;
+  height: 12px;
+  width: 12px;
+}
+
+/
+/* Up */
+/*
+::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  border-width: 0 8px 8px 8px;
+  border-color: transparent transparent #555555 transparent;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+*/
+
+/* Down */
+/*
+::-webkit-scrollbar-button:single-button:horizontal:increment {
+  border-width: 8px 8px 0 8px;
+  border-color: #555555 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:horizontal:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
+*/
+
+
 .table-responsive::-webkit-scrollbar:vertical {
   width: 12px;
 }
