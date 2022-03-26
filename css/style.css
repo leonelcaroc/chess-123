@@ -20,7 +20,6 @@
 
 
 
-
 .table-responsive::-webkit-scrollbar {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -68,11 +67,12 @@
   background-color: #DFDAD9;
 }
 
+
 @media(min-width: 1000px) {
   .table-responsive::-webkit-scrollbar:horizontal {
     height: 16px;
   }
-  
+
   .table-responsive::-webkit-scrollbar:vertical {
     height: 16px;
   }
@@ -87,7 +87,7 @@
   .carousel-button2 {
     padding-right: 1.5rem;
   }
-} 
+}
 
 
 
