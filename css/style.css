@@ -48,6 +48,10 @@
   .table-responsive::-webkit-scrollbar:horizontal {
     height: 18px;
   }
+  
+  .table-responsive::-webkit-scrollbar:vertical {
+    height: 18px;
+  }
 }
 
 @media(max-width: 400px) {
