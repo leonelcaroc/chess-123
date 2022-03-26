@@ -46,11 +46,11 @@
 
 @media(min-width: 1000px) {
   .table-responsive::-webkit-scrollbar:horizontal {
-    height: 18px;
+    height: 16px;
   }
   
   .table-responsive::-webkit-scrollbar:vertical {
-    height: 18px;
+    height: 16px;
   }
 }
 
