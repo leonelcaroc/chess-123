@@ -24,15 +24,17 @@
   appearance: none;
 }
 
+
+/*
 .table-responsive::-webkit-scrollbar-button:single-button {
   background: #bbbbbb;
   display: block;
   border-style: solid;
-  height: 12px;
-  width: 12px;
+  height: 15px;
+  width: 15px;
 }
 
-/
+
 /* Up */
 /*
 ::-webkit-scrollbar-button:single-button:horizontal:decrement {
@@ -57,7 +59,9 @@
 }
 */
 
-/*
+
+/* Table Responsive Scroll Bar */
+
 
 .table-responsive::-webkit-scrollbar:vertical {
   width: 12px;
@@ -88,7 +92,7 @@
     height: 16px;
   }
 }
-*/
+
 
 
 @media(max-width: 400px) {
@@ -99,4 +103,4 @@
   .carousel-button2 {
     padding-right: 1.5rem;
   }
-}
+} 
