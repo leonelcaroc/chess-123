@@ -29,7 +29,7 @@
   } 
   
   .table-responsive::-webkit-scrollbar:horizontal {
-    height: 12px;
+    height: 16px;
   }
   
   .table-responsive::-webkit-scrollbar-thumb {
