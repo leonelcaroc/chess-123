@@ -30,12 +30,16 @@
 
 
 .table-responsive::-webkit-scrollbar-button:single-button {
-  background: #bbbbbb;
+  background-color: rgb(64, 64, 64);
   display: block;
-  border-style: solid;
-  border-width: 0.5px;
-  height: 15px;
-  width: 15px;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar-button:single-button:horizontal-decrement {
+  height: 12px;
+  width: 12px;
+  background-position: 3px 3px;
 }
 
 
