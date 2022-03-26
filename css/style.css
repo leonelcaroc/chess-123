@@ -79,7 +79,7 @@
 }
 
 
-@media(max-width: 400px) {
+@media(max-width: 420px) {
   .carousel-button1 {
     padding-left: 1.5rem;
   }
