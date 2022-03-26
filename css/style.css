@@ -57,6 +57,7 @@
 }
 */
 
+/*
 
 .table-responsive::-webkit-scrollbar:vertical {
   width: 12px;
@@ -87,6 +88,8 @@
     height: 16px;
   }
 }
+*/
+
 
 @media(max-width: 400px) {
   .carousel-button1 {
