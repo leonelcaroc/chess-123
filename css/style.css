@@ -78,6 +78,16 @@
   }
 }
 
+@media(max-width: 800px) {
+  .table-responsive::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+  }
+
+  .table-responsive::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}
+
 
 @media(max-width: 476px) {
   .carousel-button1 {
