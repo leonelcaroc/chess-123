@@ -2682,15 +2682,12 @@ textarea.form-control-lg {
   color: transparent;
 }
 
-
+/* Form Floating with placeholder edited 2nd selector */
 .form-floating > .with-transparent1::placeholder {
   color: transparent;
 }
 
-/*
-.form-floating > .textArea1::placeholder {
-  color: transparent;
-*/
+
 
 .form-floating > .form-control:not(:-moz-placeholder-shown) {
   padding-top: 1.625rem;
