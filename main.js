@@ -18,3 +18,13 @@ const mouseDownHandler = function(e) {
   document.addEventListener('mouseup', mouseUpHandler);
 };
 
+const mouseMoveHandler = function(e) {
+  // How far the mouse has been moved
+  const dx = e.clientX - pos.x;
+  const dy = e.clientY - pos.y;
+
+  // Scroll the element
+  ele.scrollTop = pos.top - dy;
+  ele.scrollLeft = pos.left - dx;
+};
+
