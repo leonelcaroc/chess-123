@@ -1,4 +1,4 @@
-const container = document.querySelector('.table');
+const container = document.querySelectorAll('.table');
 
     let startY;
     let startX;
