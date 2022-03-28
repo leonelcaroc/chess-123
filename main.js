@@ -28,3 +28,17 @@ const mouseMoveHandler = function(e) {
   ele.scrollLeft = pos.left - dx;
 };
 
+const mouseDownHandler = function(e) {
+  // Change the cursor and prevent user from selecting the text
+  ele.style.cursor = 'grabbing';
+  ele.style.userSelect = 'none';
+ 
+};
+
+const mouseUpHandler = function() {
+  document.removeEventListener('mousemove', mouseMoveHandler);
+  document.removeEventListener('mouseup', mouseUpHandler);
+
+  ele.style.cursor = 'grab';
+  ele.style.removeProperty('user-select');
+};
