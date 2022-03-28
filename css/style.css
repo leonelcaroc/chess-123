@@ -43,11 +43,6 @@
 }
 */
 
-.tables_container {
-  cursor: grab;
-  overflow: auto;
-}
-
 
 
 /* Table Responsive Scroll Bar */
@@ -72,38 +67,66 @@
   background-color: #DFDAD9;
 }
 
-
-@media(min-width: 1000px) {
-  .table-responsive::-webkit-scrollbar:horizontal {
-    height: 16px;
+@media(min-width: 768px) {
+  .table-responsive::-webkit-scrollbar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   }
-
+  
   .table-responsive::-webkit-scrollbar:vertical {
-    height: 16px;
-  }
+  width: none;
 }
 
-@media(max-width: 800px) {
-  .table-responsive::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-  }
-
-  .table-responsive::-webkit-scrollbar-track {
-    border-radius: 10px;
-  }
+.table-responsive::-webkit-scrollbar:horizontal {
+  height: none;
 }
 
-
-@media(max-width: 476px) {
-  .carousel-button1 {
-    padding-left: 1.5rem;
-  }
-
-  .carousel-button2 {
-    padding-right: 1.5rem;
-  }
+.table-responsive::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: none;
+  border: none;
 }
 
+.table-responsive::-webkit-scrollbar-track {
+  height: none;
+  border-radius: none;
+  background-color: none;
+  
+} }
+
+
+
+  @media(min-width: 1000px) {
+    .table-responsive::-webkit-scrollbar:horizontal {
+      height: 16px;
+    }
+
+    .table-responsive::-webkit-scrollbar:vertical {
+      height: 16px;
+    }
+  }
+
+  @media(max-width: 800px) {
+    .table-responsive::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+    }
+
+    .table-responsive::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+  }
+
+
+  @media(max-width: 476px) {
+    .carousel-button1 {
+      padding-left: 1.5rem;
+    }
+
+    .carousel-button2 {
+      padding-right: 1.5rem;
+    }
+  }
 
 
 
@@ -111,7 +134,8 @@
 
 
 
-/*
+
+  /*
 ::-webkit-scrollbar {
     width: 16px;
     height: 16px;
@@ -137,7 +161,7 @@
 }
 
 /* Buttons */
-/*
+  /*
 ::-webkit-scrollbar-button:single-button {
     background-color: rgb(64, 64, 64);
 
@@ -147,7 +171,7 @@
 }
 
 /* Up */
-/*
+  /*
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
     height: 12px;
     width: 16px;
@@ -180,7 +204,7 @@
 }
 
 /* Buttons */
-/*
+  /*
 ::-webkit-scrollbar-button:single-button {
     background-color: rgb(64, 64, 64);
 
@@ -190,7 +214,7 @@
 }
 
 /* Up */
-/*
+  /*
 ::-webkit-scrollbar-button:single-button:vertical:decrement {
     height: 12px;
     width: 16px;
@@ -207,7 +231,7 @@
 }
 
 /* Down */
-/*
+  /*
 ::-webkit-scrollbar-button:single-button:vertical:increment {
     height: 12px;
     width: 16px;
@@ -224,7 +248,7 @@
 }
 
 /* Left */
-/*
+  /*
 ::-webkit-scrollbar-button:single-button:horizontal:decrement {
     height: 12px;
     width: 12px;
@@ -241,7 +265,7 @@
 }
 
 /* Right */
-/*
+  /*
 ::-webkit-scrollbar-button:single-button:horizontal:increment {
     height: 12px;
     width: 12px;
