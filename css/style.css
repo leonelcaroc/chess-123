@@ -67,36 +67,12 @@
   background-color: #DFDAD9;
 }
 
-/*
-@media(min-width: 768px) {
-  .table-responsive::-webkit-scrollbar {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  }
-  
-  .table-responsive::-webkit-scrollbar:vertical {
-  width: none;
+.table {
+  cursor: grab;
 }
 
-.table-responsive::-webkit-scrollbar:horizontal {
-  height: none;
-}
 
-.table-responsive::-webkit-scrollbar-thumb {
-  background-color: none;
-  border-radius: none;
-  border: none;
-}
 
-.table-responsive::-webkit-scrollbar-track {
-  height: none;
-  border-radius: none;
-  background-color: none;
-  
-}
-}
-*/
 
 
 @media(min-width: 1000px) {
