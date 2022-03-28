@@ -43,6 +43,10 @@
 }
 */
 
+.tables_container {
+  cursor: grab;
+}
+
 
 
 /* Table Responsive Scroll Bar */
