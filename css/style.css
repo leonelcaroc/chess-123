@@ -45,6 +45,7 @@
 
 .tables_container {
   cursor: grab;
+  overflow: auto;
 }
 
 
